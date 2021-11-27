@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../img/icono.ico">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
@@ -24,13 +25,15 @@
                     <img src="../img/instagram.png" alt="instagram" width="35px">
                 </div>
             </nav>
-            <div class="titulo">
-                    <div class="logoi">
-                        <a href="#">
-                            <img src="../img/logo-s-fondo.png" alt="logo" style="width: 70%;">
-                        </a>
-                    </div>
-                    <h1 class="titulointegro">ÍNTEGRO - <em>PRODUCTOR DE SEGUROS</em></h1>
+            <div data-aos="flip-down">
+                <div class="titulo">
+                        <div class="logoi">
+                            <a href="#">
+                                <img src="../img/logo-s-fondo.png" alt="logo" style="width: 70%;">
+                            </a>
+                        </div>
+                        <h1 class="titulointegro">ÍNTEGRO - <em>PRODUCTOR DE SEGUROS</em></h1>
+                 </div>
             </div>
             <nav class="lista1">
                 <ul>
@@ -43,9 +46,11 @@
         </header>
         <main>
             <section>
-                <section class="pasos">
-                    <img src="../img/banner.jpg" alt="pasos" style="width: 100%;">
-                </section>
+                <div data-aos="flip-left">
+                    <section class="pasos">
+                        <img src="../img/banner.jpg" alt="pasos" style="width: 100%;">
+                    </section>
+               </div>
                <section class="formulario">
                     <form class="" action="">
                         <h2 class="formulario__espaciado">FORMULARIO DE CONTACTO</h2>
@@ -125,5 +130,9 @@
         <div class="espaciofinal">
             
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     </body>
     </html>
