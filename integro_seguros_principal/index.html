@@ -17,30 +17,31 @@
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-
-
-     <header>
-        <div class="container">
-            <nav class="row .redes">
-                <div class="redespmail"><p>Integroproductor@gmail.com</p></div>
-                <div class="redesp"><p>Cel: 123456789</p></div>
-                <div class="redesimg">
+<header>
+  <div class="container-fluid">
+    <nav class=" row redes">
+        <div class="redespmail text-center col-md-4"><p>Integroproductor@gmail.com</p></div>
+                <div class="redesp col-md-4"><p>Cel: 123456789</p></div>
+                <div class="redesimg text-center col-md-4">
                     <img src="../img/whatsapp.png" alt="whatsapp" width="35px">
                     <img src="../img/facebook.png" alt="facebook" width="35px">
                     <img src="../img/instagram.png" alt="instagram" width="35px">
                 </div>
-            </nav>
-        </div>
+      </nav>
+ </div>
+      <!-- logo y titulo -->
             <div data-aos="flip-down">
-                <div class="titulo">
-                        <div class="logoi">
+              <div class="container-fluid">
+                <div class=" row titulo">
+                        <div class="logoi col-md-3">
                             <a href="#">
-                                <img src="../img/logo-s-fondo.png" alt="logo" style="width: 70%;">
+                                <img src="../img/logo-s-fondo.png" alt="logo" style="width: 53%;">
                             </a>
                         </div>
-                        <h1 class="titulointegro">ÍNTEGRO - <em>PRODUCTOR DE SEGUROS</em></h1>
+                        <h1 class="titulointegro col-md-9">ÍNTEGRO - <em>PRODUCTOR DE SEGUROS</em></h1>
                  </div>
-            </div>
+              </div>
+           </div>
             <!-- nav bar bootstrap -->
                     <ul class="nav nav-pills navboost">
                         <li class="nav-item dropdown navboost ">
@@ -67,17 +68,10 @@
                            
                     </ul>
 
-         <!-- <nav class="lista1"> 
-                <ul>
-                    <li><a href="segundo_nivel/1 productos/productos.html">PRODUCTOS</a></li>
-                    <li><a href="segundo_nivel/2 cotiza/cotiza.html">COTIZÁ</a></li>
-                    <li><a href="segundo_nivel/3 sucursal/sucursal.html">SUCURSAL</a></li>
-                    <li><a href="segundo_nivel/4 en caso de sinistro/siniestro.html">EN CASO DE SINIESTRO</a></li>
-                </ul>
-            </nav> -->
-            <!-- FIN DE NAV -->
-        </header>
+       
+     </header>
         <main>
+          <!-- carrusel de img -->
            <section>
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -100,147 +94,99 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
-                <!-- <div data-aos="flip-left">
-                    <section class="pasos">
-                        <img src="../img/banner.jpg" alt="pasos" style="width: 100%;">
-                    </section>
-               </div> -->
-               <!-- formulario bootstrap -->
-               <section class="formulario">
-                <h2 class="formulario__espaciado">FORMULARIO DE CONTACTO</h2>
-                
-                <div class="form-floating mb-3 formulario__espaciado">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Apellido</label>
+              <!-- formulario -->
+          <section class="container formulario">
+                  <div class="row">
+                  <h2 class="formularioh2 col-md-12">FORMULARIO DE CONTACTO</h2>
+                </div>
+
+                <div class="row">
+                  <div class="form-floating mb-3 formulario__espaciado col-md-4 ">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput">Nombre</label>
+                </div>
+              
+                <div class="form-floating mb-3 formulario__espaciado col-md-4">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">Teléfono</label>
+                </div>
+
+                <div class="form-floating mb-3 formulario__espaciado col-md-4">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">Email</label>
+                </div>
+              </div>
+              <div class="row">
+                  <div class="form-floating formulario__espaciado col-md-6">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                      <option selected>Provincia</option>
+                      <option value="1">Mendoza</option>
+                      <option value="2">San Luis</option>
+                      <option value="3">San Juan</option>
+                      <option value="4">San Rafael</option>
+                      <option value="5">Córdoba</option>
+                      <option value="6">Otra</option>
+                    </select>
+                    <label for="floatingSelect">Provincia</label>
+                </div>
+                  <div class="form-floating mb-3 formulario__espaciado col-md-6">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Asunto</label>
                   </div>
+              </div>
+            <div class="row">
+                  <div class="form-floating formulario__espaciado col-md-12">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">Dejame tu mensaje</label>
+                  </div>
+              </div>
+
+                <div class="for-row text-center boton ">
+                      <button class="btn btn-primary formulario__espaciado " type="submit">Enviar</button>
+                  </div>
+        </section>
        
-
-              <div class="form-floating mb-3 formulario__espaciado">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Apellido</label>
+       <!-- mi trayectoria -->
+      <section class=" container sobreMi">
+              <div class="row">
+                <h3 class="formularioh2 col-md-12">TRAYECTORIA</h3>
               </div>
-
-              <div class="form-floating mb-3 formulario__espaciado">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Teléfono</label>
-              </div>
-
-              <div class="form-floating mb-3 formulario__espaciado">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Email</label>
-              </div>
-
-              <div class="form-floating formulario__espaciado">
-                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                  <option selected>Provincia</option>
-                  <option value="1">Mendoza</option>
-                  <option value="2">San Luis</option>
-                  <option value="3">San Juan</option>
-                  <option value="4">San Rafael</option>
-                  <option value="5">Córdoba</option>
-                  <option value="6">Otra</option>
-                </select>
-                <label for="floatingSelect">Selecciona tu provincia</label>
-              </div>
-
-              <div class="form-floating formulario__espaciado">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                <label for="floatingTextarea">Dejame tu mensaje</label>
-              </div>
-
-         
-                <button class="btn btn-primary formulario__espaciado" type="submit">Button</button>
-             </section>
-         <!-- <section class="formulario">
-                    <form class="" action="">
-                        <h2 class="formulario__espaciado">FORMULARIO DE CONTACTO</h2>
-
-                        <div class="formulario__espaciado">
-                            <label for="Nombre">Nombre:</label> 
-                            <input type="text" name="Nombre" placeholder="Nombre"> 
-                        </div>
-
-                        <div class="formulario__espaciado">
-                            <label for="apellido">Apellido:</label> 
-                            <input type="text" name="apellido" placeholder="Apellido"> 
-                        </div>
-
-                        <div class="formulario__espaciado">
-                            <label for="number">Teléfono:</label> 
-                            <input type="tel" name="number" placeholder="Dejanos tu numero">
-                        </div>
-
-                        <div class="formulario__espaciado">
-                            <label for="email">Correo email:</label>
-                            <input type="email" name="email" placeholder="Introduzca su correo email">
-                        </div>
-
-                        <div class="formulario__espaciado">
-                            <p>Provincia</p>
-                            <select name="lista p" id="">
-                                <option value="">MENDOZA</option>
-                                <option value="">SAN JUAN</option>
-                                <option value="">SAN RAFAEL</option>
-                                <option value="">SAN LUIS</option>
-                                <option value="">BUENOS AIRES</option>
-                                <option value="">CORDOBA</option>
-                            </select>
-                        </div>
-
-                        <div class="formulario__espaciado">
-                            <textarea name="Mensaje" id="" cols="30" rows="10" placeholder="Dejanos tu mensaje"></textarea>
-                        </div>
-
-                        <div class="formulario__espaciado">
-                            <input type="submit" placeholder="ENVIAR">
-                        </div>
-
-                    </form>
-                </section>
-        </section> -->
-        <section class="sobreMi">
-            <h3>TRAYECTORIA</h3>
-            <div class="sobremiMi">
-                <img class="sobreMiImg" src="../img/sobre mi.jpg" alt="sobre mi" style="width: 90%;">
+         <div class="row">
+                <div class="sobremiMi col-md-6">
+                  <img class="sobreMiImg" src="../img/sobremi.jpg" alt="sobre mi" style="width: 100%;"></div>
                 
-                <div class="card border-primary mb-3 sobreMiP" style="max-width: 55rem;">
-                        <p class="card-text"> Soy Dino, productor de seguros con una amplia trayectoria. <br>
+                 <div class="card border-primary col-md-6 sobreMiP" style="max-width: 30rem">
+                        <p class="card-text cartadino"> Soy Dino, productor de seguros con una amplia trayectoria. <br>
 
                         Creo que la atención personalizada a los clientes, combinada con el uso de nuevas tecnologías puede hacer que contratar un seguro sea más ágil y efectivo.
     
                         Es importante que cuando tengas una inquietud o en caso de siniestro te sientas acompañado por profesionales.
     
                         Te invito a que me acompañes y vivas esta experiencia. </p>
-                   
-                  </div>
-                <!-- <p class="sobreMiP">
-                    Soy Dino, productor de seguros con una amplia trayectoria.
-
-                    Creo que la atención personalizada a los clientes, combinada con el uso de nuevas tecnologías puede hacer que contratar un seguro sea más ágil y efectivo.
-
-                    Es importante que cuando tengas una inquietud o en caso de siniestro te sientas acompañado por profesionales.
-
-                    Te invito a que me acompañes y vivas esta experiencia.
-                </p> -->
-            </div> 
-        </section>
+                   </div>
+          
+          </div>        
+                
+      </section>
         </main>
-
-        <footer>
-            <ul class="izquierda">
-                <li> <strong> Contacto 123456789</strong> </li>
-                <li> <strong> Dirección</strong> Av Siempre viva 123 </li>
-                <li> <strong> Horarios</strong>  de Lun a Vie de 9h a 20:30h</li>
-            </ul>
-            <ul class="derecha">
-                <li><h5>SuperIntendecia de Seguros de la Nación</h></li>
-                <li> Infanta Mercedes de San Martín 624, M5502 DKN, Mendoza</li>
-                <li> Teléfono 02615425333</li>
-            </ul>
-        </footer>
-        <div class="espaciofinal">
-            
-    </div>
+      <footer>
+          <div class="container-fluid">
+          <div class="row">
+              <ul class="izquierda col-md-6">
+                  <li> <strong> Contacto 123456789</strong> </li>
+                  <li> <strong> Dirección</strong> Av Siempre viva 123 </li>
+                  <li> <strong> Horarios</strong>  de Lun a Vie de 9h a 20:30h</li>
+              </ul>
+              <ul class="derecha col-md-6 alig-item-end">
+                  <li><h5>SuperIntendecia de Seguros de la Nación</h></li>
+                  <li> Infanta Mercedes de San Martín 624, M5502 DKN, Mendoza</li>
+                  <li> Teléfono 02615425333</li>
+              </ul>
+          </div>
+        </div>
+      </footer>
+       
+    
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
