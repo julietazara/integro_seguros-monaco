@@ -19,8 +19,9 @@
 <body>
 
 
-        <header>
-            <nav class="redes">
+     <header>
+        <div class="container">
+            <nav class="row .redes">
                 <div class="redespmail"><p>Integroproductor@gmail.com</p></div>
                 <div class="redesp"><p>Cel: 123456789</p></div>
                 <div class="redesimg">
@@ -29,6 +30,7 @@
                     <img src="../img/instagram.png" alt="instagram" width="35px">
                 </div>
             </nav>
+        </div>
             <div data-aos="flip-down">
                 <div class="titulo">
                         <div class="logoi">
@@ -39,23 +41,117 @@
                         <h1 class="titulointegro">ÍNTEGRO - <em>PRODUCTOR DE SEGUROS</em></h1>
                  </div>
             </div>
-            <nav class="lista1">
+            <!-- nav bar bootstrap -->
+                    <ul class="nav nav-pills navboost">
+                        <li class="nav-item dropdown navboost ">
+                            <a class="nav-link active dropdown-toggle navboost" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">SEGUROS</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="segundo_nivel/1 productos/productos.html">VIDA Y SALUD</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="segundo_nivel/1 productos/productos.html">VIAJES Y TURISMO</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="segundo_nivel/1 productos/productos.html">EMPRESAS</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="segundo_nivel/1 productos/productos.html">SEGURO PARA MASCOTAS</a></li>
+                            </ul>
+                     </li>
+                     <li class="nav-item navboost">
+                          <a class="nav-link active" aria-current="page" href="segundo_nivel/2 cotiza/cotiza.html">COTIZÁ</a>
+                     </li>
+                     <li class="nav-item navboost">
+                            <a class="nav-link active" href="segundo_nivel/3 sucursal/sucursal.html">SUCURSAL</a>
+                     </li>
+                     <li class="nav-item navboost">
+                                <a class="nav-link active" href="segundo_nivel/4 en caso de sinistro/siniestro.html">EN CASO DE SINIESTRO</a>
+                     </li>
+                           
+                    </ul>
+
+         <!-- <nav class="lista1"> 
                 <ul>
                     <li><a href="segundo_nivel/1 productos/productos.html">PRODUCTOS</a></li>
                     <li><a href="segundo_nivel/2 cotiza/cotiza.html">COTIZÁ</a></li>
                     <li><a href="segundo_nivel/3 sucursal/sucursal.html">SUCURSAL</a></li>
                     <li><a href="segundo_nivel/4 en caso de sinistro/siniestro.html">EN CASO DE SINIESTRO</a></li>
                 </ul>
-            </nav>
+            </nav> -->
+            <!-- FIN DE NAV -->
         </header>
         <main>
-            <section>
-                <div data-aos="flip-left">
+           <section>
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="../img/Cotizador-de-Seguros.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="../img/feliz-familia-silueta-puesta-sol_1303-22466.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="../img/choque.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+                <!-- <div data-aos="flip-left">
                     <section class="pasos">
                         <img src="../img/banner.jpg" alt="pasos" style="width: 100%;">
                     </section>
-               </div>
+               </div> -->
+               <!-- formulario bootstrap -->
                <section class="formulario">
+                <h2 class="formulario__espaciado">FORMULARIO DE CONTACTO</h2>
+                
+                <div class="form-floating mb-3 formulario__espaciado">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Apellido</label>
+                  </div>
+       
+
+              <div class="form-floating mb-3 formulario__espaciado">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Apellido</label>
+              </div>
+
+              <div class="form-floating mb-3 formulario__espaciado">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Teléfono</label>
+              </div>
+
+              <div class="form-floating mb-3 formulario__espaciado">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email</label>
+              </div>
+
+              <div class="form-floating formulario__espaciado">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                  <option selected>Provincia</option>
+                  <option value="1">Mendoza</option>
+                  <option value="2">San Luis</option>
+                  <option value="3">San Juan</option>
+                  <option value="4">San Rafael</option>
+                  <option value="5">Córdoba</option>
+                  <option value="6">Otra</option>
+                </select>
+                <label for="floatingSelect">Selecciona tu provincia</label>
+              </div>
+
+              <div class="form-floating formulario__espaciado">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea">Dejame tu mensaje</label>
+              </div>
+
+         
+                <button class="btn btn-primary formulario__espaciado" type="submit">Button</button>
+             </section>
+         <!-- <section class="formulario">
                     <form class="" action="">
                         <h2 class="formulario__espaciado">FORMULARIO DE CONTACTO</h2>
 
@@ -101,12 +197,23 @@
 
                     </form>
                 </section>
-        </section>
+        </section> -->
         <section class="sobreMi">
             <h3>TRAYECTORIA</h3>
             <div class="sobremiMi">
-                <img class="sobreMiImg" src="../img/sobre mi.jpg" alt="sobre mi" style="width: 70%;">
-                <p class="sobreMiP">
+                <img class="sobreMiImg" src="../img/sobre mi.jpg" alt="sobre mi" style="width: 90%;">
+                
+                <div class="card border-primary mb-3 sobreMiP" style="max-width: 55rem;">
+                        <p class="card-text"> Soy Dino, productor de seguros con una amplia trayectoria. <br>
+
+                        Creo que la atención personalizada a los clientes, combinada con el uso de nuevas tecnologías puede hacer que contratar un seguro sea más ágil y efectivo.
+    
+                        Es importante que cuando tengas una inquietud o en caso de siniestro te sientas acompañado por profesionales.
+    
+                        Te invito a que me acompañes y vivas esta experiencia. </p>
+                   
+                  </div>
+                <!-- <p class="sobreMiP">
                     Soy Dino, productor de seguros con una amplia trayectoria.
 
                     Creo que la atención personalizada a los clientes, combinada con el uso de nuevas tecnologías puede hacer que contratar un seguro sea más ágil y efectivo.
@@ -114,7 +221,7 @@
                     Es importante que cuando tengas una inquietud o en caso de siniestro te sientas acompañado por profesionales.
 
                     Te invito a que me acompañes y vivas esta experiencia.
-                </p>
+                </p> -->
             </div> 
         </section>
         </main>
@@ -126,7 +233,7 @@
                 <li> <strong> Horarios</strong>  de Lun a Vie de 9h a 20:30h</li>
             </ul>
             <ul class="derecha">
-                <li><h3><strong>SuperIntendecia de Seguros de la Nación</strong></h3></li>
+                <li><h5>SuperIntendecia de Seguros de la Nación</h></li>
                 <li> Infanta Mercedes de San Martín 624, M5502 DKN, Mendoza</li>
                 <li> Teléfono 02615425333</li>
             </ul>

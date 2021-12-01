@@ -49,9 +49,9 @@ body{
     font-family: 'Yeseva One', cursive;
     color:#5603AD ;
 }
-.lista1 ul{
+.navboost{
     display: flex;
-    height: 60px;
+    height: 100px;
     list-style: none;
     justify-content: center;
     align-items: center;
@@ -60,9 +60,27 @@ body{
     font-family: 'Yeseva One', cursive;
     font-size: 20px;
 }
-.pasos{
-    margin: 30px;
+
+
+.lista1 ul{
+    display: flex;
+    height: 20px;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #9FFFCB;
+    font-family: 'Yeseva One', cursive;
+    font-size: 20px;
 }
+.carousel-item{
+    height: 600px;
+    margin-top: 20px;
+    
+}
+.pasos{
+   margin:30px;
+} 
 .formulario{
     display: flex;
     justify-content: center;
@@ -106,6 +124,7 @@ body{
     width: 80%;
     font-family:'Yeseva One', cursive ;
     font-size: 20px;
+    padding: 3%;
 }
 /*css productos*/
 .iconos ul{
