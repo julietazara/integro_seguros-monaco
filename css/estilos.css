@@ -8,50 +8,39 @@ body{
     background-repeat: repeat;
 }
 .redes{
-    display: grid;
-    width: 100%;
-    grid-template-areas:
-    "redespmail redesp redesimg";
-    grid-template-columns: repeat(3, auto); 
-    align-items: center;
-    justify-items: center;
     font-family: 'Yeseva One', cursive ;
+    width: 100%;
     font-size: 20px;
     margin-top: 1%;
 }
-.redespmail{
-    grid-area: redespmail; 
-}
+
+
 .redesp{
-    grid-area: redesp;
+   text-align: center;
 }
-.redesimg{
-    grid-area: redesimg;
-    
-}
+
 .titulo{
-    display: grid;
-    width: 100%;
-    grid-template-areas: 
-    "logoi titulointegro"
-    ;
-    grid-template-columns: 1fr 4fr;
     justify-items: center;
     align-items: center;
-    background-color: #9FFFCB;
-    
-}
-.logoi{
-    grid-area: logoi;
-}
+    background-color: #9FFFCB;}
+
+
 .titulointegro{
-    grid-area: titulointegro;
     font-family: 'Yeseva One', cursive;
     color:#5603AD ;
 }
+.navboost{
+    height: 56px;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #9FFFCB;
+    font-family: 'Yeseva One', cursive;
+    font-size: 20px;}
+
 .lista1 ul{
-    display: flex;
-    height: 60px;
+    height: 20px;
     list-style: none;
     justify-content: center;
     align-items: center;
@@ -60,26 +49,40 @@ body{
     font-family: 'Yeseva One', cursive;
     font-size: 20px;
 }
+.carousel-item{
+    height: 600px;}
 .pasos{
-    margin: 30px;
-}
-.formulario{
-    display: flex;
-    justify-content: center;
-    margin: 30px;
+   margin:30px;
+} 
+.container.formulario{
+    margin-top: 40px;
     background-color:#9FFFCB;
+    height: 450px;
 }
 .formulario__espaciado{
-    text-align: center;
-    margin: 5px;
     padding: 10px;
     font-family:'Yeseva One', cursive ;
     color:#5603AD ;
     font-size: 20px;
 }
+.formularioh2{
+    text-align: center;
+    padding: 10px;
+    font-family:'Yeseva One', cursive ;
+    color:#5603AD ;
+    font-size: 25px;
+    margin: 2%;
+}
+.boton .btn{
+    margin-top: 2%;
+    background-color: white;
+}
+.sobreMiP{
+    margin-left: 5%;
+}
+
 .sobreMi{
-    margin: 0;
-    width: 90vw;
+ padding: 2%;
 }
 .sobreMi h3{
     text-align: center;
@@ -88,40 +91,22 @@ body{
     font-size: 30px;
     padding: 20px;
 }
-.sobremiMi{
-    display: grid;
-    grid-template-areas: 
-    "sobreMiImg sobreMiP"
-    ;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-}
-.sobreMiImg{
-    grid-area: sobreMiImg;   
-}
 .sobreMiP{
-    grid-area: sobreMiP;
     line-height: 2;
     width: 80%;
     font-family:'Yeseva One', cursive ;
     font-size: 20px;
+    padding: 3%;
 }
 /*css productos*/
 .iconos ul{
-    display: flex;
     list-style: none;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 2% ;}
-.iconos ul li{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;}
+     padding: 2% ;}
+
 .iconos ul li img{
-    width: 30%;}
-.tiposdeseguros h2{
+   width: 50%;}
+
+   .tiposdeseguros h2{
     text-align: center;
     font-family:'Yeseva One', cursive ;
     color:#5603AD ;
@@ -129,9 +114,7 @@ body{
     padding: 20px;  
 }
 .cajasSeguros{
-    display: grid;
-    grid-template-areas: 
-    "vida  mascotas empresas viajes";
+   
     border: 3px solid #5603AD;
     justify-items: center;
     gap: 10px;
@@ -140,7 +123,6 @@ body{
     line-height: 2;    
 }
 .vida{
-    grid-area: vida;
     width: 80%;
     padding: 3%;
     background-color:#9FFFCB;
@@ -149,7 +131,6 @@ body{
     color:#5603AD ;   
 }
 .empresas{
-    grid-area: empresas;
     width: 70%;
     height: 100%;
     background-color:#9FFFCB;
@@ -159,7 +140,6 @@ body{
     padding: 3%;
 }
 .viajes{
-    grid-area: viajes;
     width: 60%;
     height: 50%;
     padding: 3%;
@@ -171,7 +151,6 @@ body{
 
 }
 .mascotas{
-    grid-area: mascotas;
     width: 70%;
     height: 50%;
     margin-top: 4%;
@@ -183,7 +162,6 @@ body{
 
 }
 .video{
-    display: flex;
     justify-content: center;
     margin-bottom: 3%;
 }
@@ -202,7 +180,7 @@ body{
     height: 670px;
     }
     .tiposdesegurosS{
-        display: block;
+        /*display: block;*/
         text-align: center;
         margin: 20px;
         padding: 15px;
@@ -223,16 +201,13 @@ body{
         color:#5603AD ;
     }
     .recomendacionSiniestro__definicion{
-        
-        padding: 10px;
-        text-align: center;
-        
-    }
+    padding: 10px;
+    text-align: center;
+ }
     .emergencia{
         text-align: center; 
     }
     .emergencia ul li{
-        display: inline-block;
         margin: 5px;
         padding: 40px;
         font-size: 20px;
@@ -253,27 +228,26 @@ body{
         padding: 5px;
         margin-bottom: 25px;
     }
+
 footer{
-    display: grid;
-    grid-template-areas:  
-    "izquierda derecha" ;
-    grid-template-columns: 1fr 1fr; 
+    height: 110px;
     font-family:'Yeseva One', cursive ;
     background-color:#9FFFCB ;
-    justify-items: center;
-    align-items: center;
-    padding: 4%;   
 }
+
 .izquierda{
-    grid-area: izquierda;
+    margin: 1%;
+    margin-left: 6%;
+   
+    
 }
 .derecha{
-    grid-area: derecha;
+    margin-top: 1%;
+    width: 40%;
+    
 }
-.espaciofinal{
-    height: 50px; 
-}
-@media only screen and (min-width: 0px) and (max-width: 768px){
+
+/* @media only screen and (min-width: 0px) and (max-width: 768px){
     .titulo{
         grid-template-areas:  
         "logoi"
@@ -366,7 +340,7 @@ footer{
         width: 95%;
         height: 95%;
     }
-}
+} */
 
 
 
