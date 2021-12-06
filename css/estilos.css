@@ -37,6 +37,10 @@ header .navbar-light .navbar-toggler .navbar-toggler-icon {
     font-family: 'Yeseva One', cursive;
     font-size: 20px;}
 
+.carruselIndex{
+    z-index: -1;
+}
+
 .lista1 ul{
     height: 20px;
     list-style: none;
