@@ -7,24 +7,22 @@ body{
     background-image: url("../img/double-bubble-outline.png");
     background-repeat: repeat;
 }
+header .navbar-light .navbar-toggler .navbar-toggler-icon {
+    background-image: url("../img/lista.png");
+}
+.fondo_lila{
+    background-color:#B395E4;
+}
 .redes{
     font-family: 'Yeseva One', cursive ;
     width: 100%;
-    font-size: 20px;
-    margin-top: 1%;
+    font-size: 1.2rem;
 }
-
-
-.redesp{
-   text-align: center;
-}
-
 .titulo{
     justify-items: center;
     align-items: center;
-    background-color: #9FFFCB;}
-
-
+    background-color: #9FFFCB;
+}
 .titulointegro{
     font-family: 'Yeseva One', cursive;
     color:#5603AD ;
@@ -50,14 +48,13 @@ body{
     font-size: 20px;
 }
 .carousel-item{
-    height: 600px;}
+    height: 100%;}
 .pasos{
    margin:30px;
 } 
-.container.formulario{
-    margin-top: 40px;
-    background-color:#9FFFCB;
-    height: 450px;
+.formulario{
+    background-color: #C4F3F3;
+    /*background-color:#9FFFCB;*/
 }
 .formulario__espaciado{
     padding: 10px;
@@ -76,13 +73,10 @@ body{
 .boton .btn{
     margin-top: 2%;
     background-color: white;
-}
-.sobreMiP{
-    margin-left: 5%;
-}
 
+}
 .sobreMi{
- padding: 2%;
+ padding: 0%;
 }
 .sobreMi h3{
     text-align: center;
@@ -101,12 +95,12 @@ body{
 /*css productos*/
 .iconos ul{
     list-style: none;
-     padding: 2% ;}
-
+    padding: 2% ;
+}
 .iconos ul li img{
-   width: 50%;}
-
-   .tiposdeseguros h2{
+   width: 50%;
+}
+.tiposdeseguros h2{
     text-align: center;
     font-family:'Yeseva One', cursive ;
     color:#5603AD ;
@@ -228,23 +222,17 @@ body{
         padding: 5px;
         margin-bottom: 25px;
     }
-
 footer{
-    height: 110px;
     font-family:'Yeseva One', cursive ;
-    background-color:#9FFFCB ;
+    background-color:#B395E4;
 }
-
-.izquierda{
-    margin: 1%;
-    margin-left: 6%;
-   
-    
-}
-.derecha{
-    margin-top: 1%;
-    width: 40%;
-    
+@media only screen and (min-width: 0px) and (max-width: 768px){
+    .navbar-brand img{
+        width: 10rem !important;
+    }
+    .redes{
+        font-size: 1rem;
+    }
 }
 
 /* @media only screen and (min-width: 0px) and (max-width: 768px){
