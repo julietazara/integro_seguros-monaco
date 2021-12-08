@@ -1,0 +1,14 @@
+*{ 
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@import "colores";
+body{
+    background-image: url("../img/double-bubble-outline.png");
+    background-repeat: repeat;
+    .fondo_lila{
+        background-color:$bc_lila;
+    }
+    
+}
