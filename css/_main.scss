@@ -1,5 +1,24 @@
 @import "colores";
+@import "fuente";
+@mixin cards($background, $fuente){
+    background-color: $background;
+    font-family: $fuente;
+    h5{
+        text-align: center
+    }
+}
+
 main{
+    .fuenteYColor{
+        font-family:$mifuente;
+        color:$bc_letra;
+    }
+    h1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @extend.fuenteYColor;
+    }
     .carruselIndex{
         z-index: -1;
     }
@@ -13,29 +32,27 @@ main{
     }
     .formulario__espaciado{
         padding: 10px;
-        font-family:'Yeseva One', cursive ;
-        color:$bc_letra;
+        @extend.fuenteYColor;
         font-size: 20px;
     }
     .formularioh2{
         text-align: center;
         padding: 10px;
-        font-family:'Yeseva One', cursive ;
-        color:$bc_letra;
         font-size: 25px;
         margin: 2%;
+        @extend.fuenteYColor;
     }
     .boton .btn{
         margin-top: 2%;
         background-color: white;
+        @extend.fuenteYColor;
     
     }
     .sobreMi{ padding: 0%;
     }
     .sobreMi h3{
         text-align: center;
-        font-family:'Yeseva One', cursive ;
-        color:$bc_letra ;
+        @extend.fuenteYColor;
         font-size: 30px;
         padding: 20px;
     }
@@ -52,21 +69,23 @@ main{
     }
     .iconos ul li img{ width: 50%;
     }
-    .tiposdeseguros h2{
-        text-align: center;
-        font-family:'Yeseva One', cursive ;
-        color:$bc_letra ;
-        font-size: 30px;
-        padding: 20px;  
+    .empresa{
+        @include cards($bc_form, $mifuente);
     }
-    .cajasSeguros{
-        border: 3px solid $bc_letra;
-        justify-items: center;
-        gap: 10px;
-        padding: 2%;
-        margin: 3%;
-        line-height: 2;    
+    .vida{
+        @include cards($bc_form, $mifuente); 
     }
+    .viajes{
+        @include cards($bc_form, $mifuente);
+        border: 6px inset ;
+    }
+    .mascotas{
+        @include cards($bc_form, $mifuente);
+        border: ridge 6px;  
+    }  
+
+
+    
     .video{
         justify-content: center;
         margin-bottom: 3%;
@@ -79,18 +98,22 @@ main{
         margin-top: 2%;
         margin-bottom: 2%;
     }
+    $mapSiniestro:(
+        alinear:center,
+        tamañoFuente:1.5rem,
+        margenTiposDeSegurosS:5%,
+);
+.tiposdesegurosS{
+        text-align: map-get($map: $mapSiniestro, $key:alinear );
+        font-size:map-get($map: $mapSiniestro, $key:tamañoFuente ) ;
+        margin:map-get($map: $mapSiniestro, $key:margenTiposDeSegurosS );
+        line-height: 4;
+        @extend.fuenteYColor
+    }
     .imgSiniestro img{
         height: 670px;
     }
-    .tiposdesegurosS{
-        text-align: center;
-        margin: 20px;
-        padding: 15px;
-        font-family:'Yeseva One', cursive ;
-        font-size: 23px;
-        color:$bc_letra;
-        line-height: 4;
-    }
+    
     .recomendacionSiniestro{
         margin: 10px;
         background-color:#9FFFCB ;
@@ -98,22 +121,26 @@ main{
         margin-right: 30px;
         height: 90px;
         padding: 20px;
-        font-family:'Yeseva One', cursive;
         font-size: 20px;
-        color:$bc_letra;
+        @extend.fuenteYColor;
+        
     }
     .recomendacionSiniestro__definicion{
     padding: 10px;
     text-align: center;
+    
     }
     .emergencia{
-        text-align: center; 
+    text-align: center; 
+    margin-top: 3%;
     }
     .emergencia ul li{
+        display: inline;
+        list-style: none;
         margin: 5px;
         padding: 40px;
         font-size: 20px;
-        font-family: 'Yeseva One', cursive;
+        font-family: $mifuente;
         font-weight:normal;
         color:rgb(58, 69, 78);
     }
@@ -122,12 +149,12 @@ main{
         font-size: 30px;
     }
     .accesoPoliza__boton input{
-        font-family:'Yeseva One', cursive ;
+        @extend.fuenteYColor;
         text-decoration: none;   
         font-size: 25px;
-        color: $bc_letra;
         border: 3px double;
         padding: 5px;
         margin-bottom: 25px;
+        margin-top: 5%;
     }
 }

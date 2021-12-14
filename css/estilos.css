@@ -24,33 +24,21 @@ header .redes {
   font-size: 1.2rem;
 }
 
-header .titulo {
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #9FFFCB;
-}
-
-header .titulointegro {
-  font-family: 'Yeseva One', cursive;
+main .fuenteYColor, main h1, main .formulario__espaciado, main .formularioh2, main .boton .btn, main .sobreMi h3, main .tiposdesegurosS, main .recomendacionSiniestro, main .accesoPoliza__boton input {
+  font-family: "Yeseva One", cursive;
   color: #5603AD;
 }
 
-header .navboost {
-  height: 56px;
-  list-style: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+main h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background-color: #9FFFCB;
-  font-family: 'Yeseva One', cursive;
-  font-size: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main .carruselIndex {
@@ -71,16 +59,12 @@ main .formulario {
 
 main .formulario__espaciado {
   padding: 10px;
-  font-family: 'Yeseva One', cursive;
-  color: #5603AD;
   font-size: 20px;
 }
 
 main .formularioh2 {
   text-align: center;
   padding: 10px;
-  font-family: 'Yeseva One', cursive;
-  color: #5603AD;
   font-size: 25px;
   margin: 2%;
 }
@@ -96,8 +80,6 @@ main .sobreMi {
 
 main .sobreMi h3 {
   text-align: center;
-  font-family: 'Yeseva One', cursive;
-  color: #5603AD;
   font-size: 30px;
   padding: 20px;
 }
@@ -119,21 +101,42 @@ main .iconos ul li img {
   width: 50%;
 }
 
-main .tiposdeseguros h2 {
-  text-align: center;
-  font-family: 'Yeseva One', cursive;
-  color: #5603AD;
-  font-size: 30px;
-  padding: 20px;
+main .empresa {
+  background-color: #C4F3F3;
+  font-family: "Yeseva One", cursive;
 }
 
-main .cajasSeguros {
-  border: 3px solid #5603AD;
-  justify-items: center;
-  gap: 10px;
-  padding: 2%;
-  margin: 3%;
-  line-height: 2;
+main .empresa h5 {
+  text-align: center;
+}
+
+main .vida {
+  background-color: #C4F3F3;
+  font-family: "Yeseva One", cursive;
+}
+
+main .vida h5 {
+  text-align: center;
+}
+
+main .viajes {
+  background-color: #C4F3F3;
+  font-family: "Yeseva One", cursive;
+  border: 6px inset;
+}
+
+main .viajes h5 {
+  text-align: center;
+}
+
+main .mascotas {
+  background-color: #C4F3F3;
+  font-family: "Yeseva One", cursive;
+  border: ridge 6px;
+}
+
+main .mascotas h5 {
+  text-align: center;
 }
 
 main .video {
@@ -153,18 +156,15 @@ main .mapa {
   margin-bottom: 2%;
 }
 
-main .imgSiniestro img {
-  height: 670px;
-}
-
 main .tiposdesegurosS {
   text-align: center;
-  margin: 20px;
-  padding: 15px;
-  font-family: 'Yeseva One', cursive;
-  font-size: 23px;
-  color: #5603AD;
+  font-size: 1.5rem;
+  margin: 5%;
   line-height: 4;
+}
+
+main .imgSiniestro img {
+  height: 670px;
 }
 
 main .recomendacionSiniestro {
@@ -174,9 +174,7 @@ main .recomendacionSiniestro {
   margin-right: 30px;
   height: 90px;
   padding: 20px;
-  font-family: 'Yeseva One', cursive;
   font-size: 20px;
-  color: #5603AD;
 }
 
 main .recomendacionSiniestro__definicion {
@@ -186,13 +184,16 @@ main .recomendacionSiniestro__definicion {
 
 main .emergencia {
   text-align: center;
+  margin-top: 3%;
 }
 
 main .emergencia ul li {
+  display: inline;
+  list-style: none;
   margin: 5px;
   padding: 40px;
   font-size: 20px;
-  font-family: 'Yeseva One', cursive;
+  font-family: "Yeseva One", cursive;
   font-weight: normal;
   color: #3a454e;
 }
@@ -203,13 +204,12 @@ main .accesoPoliza {
 }
 
 main .accesoPoliza__boton input {
-  font-family: 'Yeseva One', cursive;
   text-decoration: none;
   font-size: 25px;
-  color: #5603AD;
   border: 3px double;
   padding: 5px;
   margin-bottom: 25px;
+  margin-top: 5%;
 }
 
 footer {
