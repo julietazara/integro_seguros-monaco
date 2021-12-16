@@ -24,7 +24,7 @@ header .redes {
   font-size: 1.2rem;
 }
 
-main .fuenteYColor, main h1, main .formulario__espaciado, main .formularioh2, main .boton .btn, main .sobreMi h3, main .tiposdesegurosS, main .recomendacionSiniestro, main .accesoPoliza__boton input {
+main .fuenteYColor, main h1, main .formulario__espaciado, main .formularioh2, main .boton .btn, main .sobreMi h3, main .recomendacionSiniestro, main .accesoPoliza__boton input {
   font-family: "Yeseva One", cursive;
   color: #5603AD;
 }
@@ -156,11 +156,13 @@ main .mapa {
   margin-bottom: 2%;
 }
 
-main .tiposdesegurosS {
+main .queHacerSiniestro {
   text-align: center;
-  font-size: 1.5rem;
-  margin: 5%;
-  line-height: 4;
+  font-size: 1.3rem;
+  margin: 3%;
+  line-height: 2;
+  color: #3a454e;
+  font-family: "Yeseva One", cursive;
 }
 
 main .imgSiniestro img {
@@ -168,18 +170,12 @@ main .imgSiniestro img {
 }
 
 main .recomendacionSiniestro {
-  margin: 10px;
-  background-color: #9FFFCB;
+  background-color: #C4F3F3;
   margin-left: 45px;
   margin-right: 30px;
-  height: 90px;
+  height: auto;
   padding: 20px;
   font-size: 20px;
-}
-
-main .recomendacionSiniestro__definicion {
-  padding: 10px;
-  text-align: center;
 }
 
 main .emergencia {
@@ -187,7 +183,7 @@ main .emergencia {
   margin-top: 3%;
 }
 
-main .emergencia ul li {
+main .emergencia {
   display: inline;
   list-style: none;
   margin: 5px;
