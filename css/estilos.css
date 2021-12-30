@@ -49,6 +49,39 @@ main .carousel-item {
   height: 100%;
 }
 
+main .tarjeta {
+  margin-top: 0.5rem;
+  font-family: "Yeseva One", cursive;
+  font-size: 1.6rem;
+  height: 50%;
+  width: 100%;
+  background-color: #C4F3F3;
+  padding-top: 1%;
+  color: #8b8b8b;
+}
+
+main .checks {
+  padding: 1.5rem;
+}
+
+main .checkH5 {
+  text-align: center;
+  font-family: "Yeseva One", cursive;
+  font-size: 1.1rem;
+  color: #474747;
+  margin: 0 auto 30px;
+  line-height: 1em;
+}
+
+main .cartasSeguros {
+  background-color: #C4F3F3;
+  font-family: "Yeseva One", cursive;
+}
+
+main .tarjeta_color {
+  background-color: #a86edf;
+}
+
 main .pasos {
   margin: 30px;
 }

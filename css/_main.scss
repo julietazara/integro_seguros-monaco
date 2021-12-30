@@ -24,6 +24,52 @@ main{
     }
     .carousel-item{
         height: 100%;}
+    
+    .tarjeta{
+    margin-top: 0.5rem;
+    font-family: $mifuente;
+    font-size: 1.6rem;
+    height:50%;
+    width: 100%;
+    background-color: $bc_form;
+    padding-top: 1%;
+    color: rgb(139, 139, 139);
+    
+    }
+    .checks{
+        
+        padding: 1.5rem;
+        
+        
+    }
+  
+    .checkH5{
+        text-align: center;
+        font-family: $mifuente;
+        font-size: 1.1rem;
+        color:rgb(71, 71, 71);
+        
+    margin: 0 auto 30px;
+   
+    
+    
+   
+    
+    line-height: 1em;
+    
+    
+        
+    }
+.cartasSeguros{
+    background-color:$bc_form;
+    font-family: $mifuente;
+    
+}
+  
+    .tarjeta_color{
+        background-color: rgb(168, 110, 223);
+        
+    }
     .pasos{
         margin:30px;
     } 
