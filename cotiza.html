@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COTIZÁ</title>
+    <title>TRAYECTORIA</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
@@ -19,106 +19,66 @@
 </head>
 <body>
 <header>
-  <div class="container-fluid fondo_lila">
-      <nav class="row redes mx-auto p-2">
-          <div class="text-center col-lg-4"><p>Integroproductor@gmail.com</p></div>
-          <div class="text-center col-lg-4"><p>Cel: 123456789</p></div>
-          <div class="text-center col-lg-4">
-              <img src="./img/whatsapp.png" alt="whatsapp" width="35px">
-              <img src="./img/facebook.png" alt="facebook" width="35px">
-              <img src="./img/instagram.png" alt="instagram" width="35px">
-          </div>
-      </nav>
+  <nav class="redesGrid fondo_lila">
+    <div class="redespmail"><p>Integroproductor@gmail.com</p></div>
+    <div class="redesp"><p>Cel: 123456789</p></div>
+    <div class="redesimg">
+        <img src="../img/whatsapp.png" alt="whatsapp" width="35px">
+        <img src="../img/facebook.png" alt="facebook" width="35px">
+        <img src="../img/instagram.png" alt="instagram" width="35px">
     </div>
+</nav>
     <!-- NAVBAR -->
-    <div data-aos="flip-down">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-            <a class="navbar-brand" href="./index.html">
-                <img src="./img/logo_editado/Integro_Logo.png" alt="Logo del emprendimiento" style="width: 15rem;">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#toggleMobileMenu" aria-controls="#toggleMobileMenu" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="redes collapse navbar-collapse" id="toggleMobileMenu">
-                <ul class="navbar-nav ms-auto text-center">
-                    <li class="mx-2"><a class="nav-link" href="./index.html">INICIO</a></li>
-                    <li class="nav-item dropdown mx-2">
-                      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">SEGUROS</a>
-                      <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="./productos.html">VIDA Y SALUD</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="./productos.html">VIAJES Y TURISMO</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="./productos.html">EMPRESAS</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="./productos.html">SEGURO PARA MASCOTAS</a></li>
-                      </ul>
-                    </li>
-                    <li class="mx-2"><a class="nav-link" href="./cotiza.html">COTIZÁ</a></li>
-                    <li class="mx-2"><a class="nav-link" href="./sucursal.html">SUCURSAL</a></li>
-                    <li class="mx-2"><a class="nav-link" href="./siniestro.html">EN CASO DE SINIESTRO</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    </div>
-      </header>
+    <div class="navGrid">
+      <div class="logoi">
+          <a href="#">
+              <img src="./img/logo_editado/Integro_Logo.png" alt="logo" style="width: 20rem;">
+          </a>
+      </div>   
+<nav class="lista1">
+  <ul>
+      <li><a href="./index.html">INICIO</a></li>
+      <li><a href="./productos.html">SEGUROS</a></li>
+      <li><a href="./cotiza.html">TRAYECTORIA</a></li>
+      <li><a href="./sucursal.html">SUCURSAL</a></li>
+      <li><a href="./siniestro.html">EN CASO DE SINIESTRO</a></li>
+  </ul>
+</nav>
+</div>
+</header>
       <main class="fuenteYColor">
-        <h1>COTIZÁ</h1>
-          <section class="container formulario p-3 my-3">
-              <div class="row">
-                <h2 class="formularioh2 col-lg-12 col-xs-12">FORMULARIO DE COTIZACIÓN</h2>
-              </div>
-              <div class="row">
-                <div class="form-floating mb-3 formulario__espaciado col-xs-12 col-lg-4">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Nombre</label>
-                </div>      
-                <div class="form-floating mb-3 formulario__espaciado col-xs-12 col-lg-4">
-                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                  <label for="floatingInput">Teléfono</label>
-                </div>
-                <div class="form-floating mb-3 formulario__espaciado col-xs-12 col-lg-4">
-                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                  <label for="floatingInput">Email</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="form-floating formulario__espaciado col-xs-12 col-lg-6">
-                  <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                    <option selected>Provincia</option>
-                    <option value="1">Mendoza</option>
-                    <option value="2">San Luis</option>
-                    <option value="3">San Juan</option>
-                    <option value="4">San Rafael</option>
-                    <option value="5">Córdoba</option>
-                    <option value="6">Otra</option>
-                  </select>
-                  <label for="floatingSelect">Provincia</label>
-                </div>
-                <div class="form-floating mb-3 formulario__espaciado col-xs-12 col-lg-6">
-                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                  <label for="floatingInput">Asunto</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="form-floating formulario__espaciado col-xs-12 col-lg-12">
-                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                  <label for="floatingTextarea">Dejame tu mensaje</label>
-                </div>
-              </div>
-              <div class="row text-center boton justify-content-center">
-                    <button class="col-4 col-lg-2 btn btn-primary formulario__espaciado " type="submit">Enviar</button>
-              </div>
-            </section>
-      <section>
-          <section class="pasos__contrata">
-              <img src="./img/contrato.jpg" alt="contrata" style="width: 100%;">
-          </section>
-            </main>
+        <section class="sobreMi">
+          <h3>TRAYECTORIA</h3>
+          <div class="sobremiMi">
+              <p class="sobreMiP text-center">
+                  Soy Dino, productor asesor de seguros, creo que la atención personalizada a los clientes, combinada con el uso de nuevas tecnologías puede hacer que contratar un seguro sea más ágil y efectivo. <br>
+
+                  Es importante que cuando tengas una inquietud o en caso de siniestro te sientas acompañado por un profesional. 
+              </p>
+          </div> 
+      </section>
+      <div class="valores">
+        <img class="sobreMiImg" src="./img/sobremi.jpg" alt="sobre mi" style="width: 60%;">
+        <ul class="valoresLista">
+          <h4>VALORES</h4>
+          <li>Profesionalismo</li>
+          <li>Excelencia</li>
+          <li>Foco en el cliente</li>
+          <li>Honestidad</li>
+          <li>Confianza</li>
+          <li>Óptima capacidad de comunicación</li>
+        </ul>
+      </div>
+      <div class="objetivo">
+        <h4 class="text-center">MI OBJETIVO</h4>
+        <p class="text-center">Lograr la satisfacción de mi cliente conociendo sus necesidades, para ofrecerle el servicio adecuado. <br> Ser el nexo cliente-compañía </p>
+      </div>
+     
+
+
+
+
+    </main>
   <footer>
       <section class="container-fluid text-center mx-auto">
           <div class="row">
