@@ -54,11 +54,6 @@ main{
     margin: 0 auto 30px;
     line-height: 1em;
     }
-  
-    .cartasSeguros{
-    background-color:$bc_form;
-    font-family: $mifuente;
-    }
     
     .tarjeta_color{
     background-color: rgb(168, 110, 223);
@@ -88,8 +83,6 @@ main{
         @extend.fuenteYColor;
     
     }
- 
-
     .sobreMi h3{
         text-align: center;
         @extend.fuenteYColor;
@@ -130,6 +123,7 @@ main{
     font-size: 1.1rem;
     margin-top: 3%;
     padding: 3%;
+    margin-bottom:3% ;
 }
     .iconos ul{
         list-style: none;
@@ -139,32 +133,14 @@ main{
     }
     .empresa{
         @include cards($bc_form, $mifuente);
+        color:rgb(66, 64, 64);
     }
-    .vida{
-        @include cards($bc_form, $mifuente); 
-    }
-    .viajes{
-        @include cards($bc_form, $mifuente);
-        border: 6px inset ;
-    }
-    .mascotas{
-        @include cards($bc_form, $mifuente);
-        border: ridge 6px;  
-    }  
-
-
-    
     .video{
         justify-content: center;
         margin-bottom: 3%;
     }
     .pasos__contrata{
         margin: 80px;
-    }
-    .mapa{
-        margin-left: 30%;
-        margin-top: 2%;
-        margin-bottom: 2%;
     }
     $mapSiniestro:(
         alinear:center,

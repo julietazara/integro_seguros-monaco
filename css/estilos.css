@@ -132,11 +132,6 @@ main .checkH5 {
   line-height: 1em;
 }
 
-main .cartasSeguros {
-  background-color: #C4F3F3;
-  font-family: "Yeseva One", cursive;
-}
-
 main .tarjeta_color {
   background-color: #a86edf;
 }
@@ -217,6 +212,7 @@ main .objetivo {
   font-size: 1.1rem;
   margin-top: 3%;
   padding: 3%;
+  margin-bottom: 3%;
 }
 
 main .iconos ul {
@@ -231,38 +227,10 @@ main .iconos ul li img {
 main .empresa {
   background-color: #C4F3F3;
   font-family: "Yeseva One", cursive;
+  color: #424040;
 }
 
 main .empresa h5 {
-  text-align: center;
-}
-
-main .vida {
-  background-color: #C4F3F3;
-  font-family: "Yeseva One", cursive;
-}
-
-main .vida h5 {
-  text-align: center;
-}
-
-main .viajes {
-  background-color: #C4F3F3;
-  font-family: "Yeseva One", cursive;
-  border: 6px inset;
-}
-
-main .viajes h5 {
-  text-align: center;
-}
-
-main .mascotas {
-  background-color: #C4F3F3;
-  font-family: "Yeseva One", cursive;
-  border: ridge 6px;
-}
-
-main .mascotas h5 {
   text-align: center;
 }
 
@@ -275,12 +243,6 @@ main .video {
 
 main .pasos__contrata {
   margin: 80px;
-}
-
-main .mapa {
-  margin-left: 30%;
-  margin-top: 2%;
-  margin-bottom: 2%;
 }
 
 main .queHacerSiniestro {
