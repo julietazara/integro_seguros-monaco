@@ -33,46 +33,39 @@ main{
     width: 100%;
     background-color: $bc_form;
     padding-top: 1%;
-    color: rgb(139, 139, 139);
+    color: rgb(100, 97, 97);
     
     }
+    .txtCheck{
+        text-align: center;
+        font-size: 1.3rem;
+        font-family: $mifuente;
+        color:rgb(100, 97, 97) ;
+    }
     .checks{
-        
-        padding: 1.5rem;
-        
-        
+    padding: 1.5rem;
     }
   
     .checkH5{
-        text-align: center;
-        font-family: $mifuente;
-        font-size: 1.1rem;
-        color:rgb(71, 71, 71);
-        
+    text-align: center;
+    font-family: $mifuente;
+    font-size: 1.1rem;
+    color:rgb(71, 71, 71);
     margin: 0 auto 30px;
-   
-    
-    
-   
-    
     line-height: 1em;
-    
-    
-        
     }
-.cartasSeguros{
+    .cartasSeguros{
     background-color:$bc_form;
     font-family: $mifuente;
+    }
     
-}
-  
     .tarjeta_color{
-        background-color: rgb(168, 110, 223);
-        
+    background-color: rgb(168, 110, 223);
+            
     }
     .pasos{
-        margin:30px;
-    } 
+    margin:30px;
+        } 
     .formulario{
         background-color: $bc_form;
     }
@@ -94,21 +87,49 @@ main{
         @extend.fuenteYColor;
     
     }
-    .sobreMi{ padding: 0%;
-    }
+ 
+
     .sobreMi h3{
         text-align: center;
         @extend.fuenteYColor;
         font-size: 30px;
         padding: 20px;
     }
-    .sobreMiP{
-        line-height: 2;
-        width: 80%;
-        font-family:'Yeseva One', cursive ;
-        font-size: 20px;
-        padding: 3%;
-    }
+.sobreMiP{
+    line-height: 2;
+    text-justify: justify;
+    font-family:$mifuente ;
+    font-size: 1.1rem;
+    padding: 3%;
+    background-color: $bc_form;
+}
+.valores{
+    display: grid;
+    grid-template-areas:
+    "sobreMiImg valoresLista";
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding-top: 1.7rem;
+}
+.sobreMiImg{
+    grid-area:sobreMiImg ;
+}
+.valoresLista{
+    grid-area: valoresLista;
+    list-style:circle;
+    font-family: $mifuente;
+    line-height: 3;
+    font-size: 1.1rem;
+}
+.objetivo{
+    background-color: $bc_form;
+    font-family: $mifuente;
+    line-height: 2;
+    font-size: 1.1rem;
+    margin-top: 3%;
+    padding: 3%;
+}
     .iconos ul{
         list-style: none;
         padding: 2% ;
@@ -198,4 +219,14 @@ main{
         margin-bottom: 25px;
         margin-top: 5%;
     }
+.tarjeta_trayectoria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $bc_form;
+    font-family: $mifuente;
+    height: auto;
+    font-size: 1.5rem;  
+}
+
 }

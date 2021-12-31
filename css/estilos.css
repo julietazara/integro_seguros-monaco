@@ -24,6 +24,58 @@ header .redes {
   font-size: 1.2rem;
 }
 
+header .redesGrid {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+      grid-template-areas: "redespmail redesp redesimg";
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  padding-top: 1%;
+  font-family: 'Yeseva One', cursive;
+  font-size: 20px;
+}
+
+header .redespmail {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: redespmail;
+}
+
+header .redesp {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: redesp;
+}
+
+header .redesimg {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: redesimg;
+}
+
+header .lista1 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: "Yeseva One", cursive;
+  font-size: 20px;
+}
+
 main .fuenteYColor, main h1, main .formulario__espaciado, main .formularioh2, main .boton .btn, main .sobreMi h3, main .recomendacionSiniestro, main .accesoPoliza__boton input {
   font-family: "Yeseva One", cursive;
   color: #5603AD;
@@ -57,7 +109,14 @@ main .tarjeta {
   width: 100%;
   background-color: #C4F3F3;
   padding-top: 1%;
-  color: #8b8b8b;
+  color: #646161;
+}
+
+main .txtCheck {
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: "Yeseva One", cursive;
+  color: #646161;
 }
 
 main .checks {
@@ -107,10 +166,6 @@ main .boton .btn {
   background-color: white;
 }
 
-main .sobreMi {
-  padding: 0%;
-}
-
 main .sobreMi h3 {
   text-align: center;
   font-size: 30px;
@@ -119,9 +174,48 @@ main .sobreMi h3 {
 
 main .sobreMiP {
   line-height: 2;
-  width: 80%;
-  font-family: 'Yeseva One', cursive;
-  font-size: 20px;
+  text-justify: justify;
+  font-family: "Yeseva One", cursive;
+  font-size: 1.1rem;
+  padding: 3%;
+  background-color: #C4F3F3;
+}
+
+main .valores {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "sobreMiImg valoresLista";
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 1.7rem;
+}
+
+main .sobreMiImg {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: sobreMiImg;
+}
+
+main .valoresLista {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: valoresLista;
+  list-style: circle;
+  font-family: "Yeseva One", cursive;
+  line-height: 3;
+  font-size: 1.1rem;
+}
+
+main .objetivo {
+  background-color: #C4F3F3;
+  font-family: "Yeseva One", cursive;
+  line-height: 2;
+  font-size: 1.1rem;
+  margin-top: 3%;
   padding: 3%;
 }
 
@@ -239,6 +333,22 @@ main .accesoPoliza__boton input {
   padding: 5px;
   margin-bottom: 25px;
   margin-top: 5%;
+}
+
+main .tarjeta_trayectoria {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #C4F3F3;
+  font-family: "Yeseva One", cursive;
+  height: auto;
+  font-size: 1.5rem;
 }
 
 footer {

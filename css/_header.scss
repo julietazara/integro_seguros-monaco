@@ -1,3 +1,5 @@
+@import "colores";
+@import "fuente";
 header{
     .navbar-light .navbar-toggler .navbar-toggler-icon {
         background-image: url("../img/lista.png");
@@ -7,5 +9,37 @@ header{
         width: 100%;
         font-size: 1.2rem;
     }
-  
+    .redesGrid{
+        display: grid;
+        width: 100%;
+        grid-template-areas:
+        "redespmail redesp redesimg";
+        grid-template-columns: repeat(3, auto); 
+        align-items: center;
+        justify-items: center;
+        padding-top: 1%;
+        font-family: 'Yeseva One', cursive ;
+        font-size: 20px;
+    }
+    .redespmail{
+        grid-area: redespmail;   
+    }
+    .redesp{
+        grid-area: redesp;
+    }
+    .redesimg{
+        grid-area: redesimg;
+    }
+    .lista1 ul{
+        display: flex;
+        height: 60px;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+        font-family: $mifuente;
+        font-size: 20px;
+        
+    }
+
 }
