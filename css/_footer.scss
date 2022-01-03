@@ -1,6 +1,27 @@
 @import "colores";
 footer{
     font-family:'Yeseva One', cursive ;
-    background-color:$bc_lila;
+    background-color:$bc_lila; 
+}
+footer{
+    display: grid;
+    grid-template-areas:  
+    "izquierda derecha" ;
+    grid-template-columns: 1fr 1fr; 
+    font-family:'Yeseva One', cursive ;
+    background-color:#9FFFCB ;
+    justify-items: center;
+    align-items: center;
+    padding: 4%;   
 
+footer .izquierda{
+    grid-area: izquierda;
+    width: 50%;
+
+}
+
+footer .derecha{
+    grid-area: derecha;
+    width: 50%;
+}
 }
