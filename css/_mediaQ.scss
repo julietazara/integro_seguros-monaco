@@ -1,66 +1,58 @@
 @media only screen and (min-width: 0px) and (max-width: 768px){
+    .sobreMi{
+        h3{
+            margin-top: 10%;
+        }
+    }
     .navbar-brand img{
         width: 10rem !important;
     }
     .redes{
         font-size: 1rem;
     }
-    .titulo{
-        grid-template-areas:  
-        "logoi"
-        "titulointegro"
-        ;
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .logoi{
-        width: 60%;
-    }
-    .logoi a{
-        display: flex;
-        justify-content: center;
-    }
-    h1{
-        font-size: 120%;
-    }
-    .redes{
-        font-size:90% ;
-        grid-template-areas:
-        "redespmail"
-        "redesp"
-        "redesimg";
-        grid-template-columns: repeat(1, 1fr);
-        gap: 7%;
-        margin-bottom: 5%;
-    }
+    nav{
+        .redesGrid{
+            font-size:90%;
+            grid-template-areas:
+            "redespmail"
+            "redesp"
+            "redesimg";
+            grid-template-columns: repeat(1, 1fr);
+            margin-bottom: 5%;
+            .redespmail{
+                grid-area: redespmail;
+            }
+            .redesp{
+                grid-area: redesp;
+            }
+            .redesimg{
+                grid-area: redesimg;
+            }
+        }
+    }  
     .lista1 ul{
         flex-wrap: wrap;
         font-size: 110%;
         padding: 5%;
     }
-    .sobremiMi{
-        grid-template-areas: 
-        "sobreMiImg"
-        "sobreMiP";
-        grid-template-columns: repeat(1, 1fr);
-        
-    }
-    .sobreMiP{
-        margin-top: 5%;
-        font-size: 105%;
-        text-align: justify;
-    }
     footer{
-        margin-top: 5%;
-        grid-template-areas:  
-        "izquierda"
-        "derecha";
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .derecha{
-        margin-top: 5%;
-        margin-left: 7%;
-    }
-    .derecha h3{
-        font-size: 100%;
+        .footerGrids{
+            // margin-top: 5%;
+            grid-template-areas:  
+            "izquierda"
+            "derecha";
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .izquierda{
+            grid-area: izquierda;
+        }
+        .derecha{
+            grid-area: derecha;
+            // margin-top: 5%;
+            // margin-left: 7%;
+        }
+        .derecha h3{
+            font-size: 100%;
+        }
     }
 }

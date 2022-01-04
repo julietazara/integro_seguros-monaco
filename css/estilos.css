@@ -6,6 +6,7 @@
 }
 
 body {
+  overflow-x: hidden;
   background-image: url("../img/double-bubble-outline.png");
   background-repeat: repeat;
 }
@@ -76,12 +77,12 @@ header .lista1 ul {
   font-size: 20px;
 }
 
-main .fuenteYColor, main h1, main .formulario__espaciado, main .formularioh2, main .boton .btn, main .sobreMi h3, main .recomendacionSiniestro, main .accesoPoliza__boton input {
+main .fuenteYColor, main h1, main h2, main .formulario__espaciado, main .formularioh2, main .boton .btn, main .sobreMi h3, main .recomendacionSiniestro, main .accesoPoliza__boton input {
   font-family: "Yeseva One", cursive;
   color: #5603AD;
 }
 
-main h1 {
+main h1, main h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,10 +96,6 @@ main h1 {
 
 main .carruselIndex {
   z-index: -1;
-}
-
-main .carousel-item {
-  height: 100%;
 }
 
 main .tarjeta {
@@ -153,7 +150,6 @@ main .formularioh2 {
   text-align: center;
   padding: 10px;
   font-size: 25px;
-  margin: 2%;
 }
 
 main .boton .btn {
@@ -174,6 +170,7 @@ main .sobreMiP {
   font-size: 1.1rem;
   padding: 3%;
   background-color: #C4F3F3;
+  color: #646161;
 }
 
 main .valores {
@@ -187,6 +184,7 @@ main .valores {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 1.7rem;
+  color: #4e4c4c;
 }
 
 main .sobreMiImg {
@@ -213,6 +211,7 @@ main .objetivo {
   margin-top: 3%;
   padding: 3%;
   margin-bottom: 3%;
+  color: #646161;
 }
 
 main .iconos ul {
@@ -318,12 +317,90 @@ footer {
   background-color: #B395E4;
 }
 
+footer .footerGrids {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "izquierda derecha";
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  font-family: 'Yeseva One', cursive;
+  background-color: #B395E4;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4%;
+}
+
+footer .izquierda {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: izquierda;
+  width: 50%;
+}
+
+footer .derecha {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: derecha;
+  width: 50%;
+}
+
 @media only screen and (min-width: 0px) and (max-width: 768px) {
+  .sobreMi h3 {
+    margin-top: 10%;
+  }
   .navbar-brand img {
     width: 10rem !important;
   }
   .redes {
     font-size: 1rem;
+  }
+  nav .redesGrid {
+    font-size: 90%;
+        grid-template-areas: "redespmail" "redesp" "redesimg";
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 5%;
+  }
+  nav .redesGrid .redespmail {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: redespmail;
+  }
+  nav .redesGrid .redesp {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: redesp;
+  }
+  nav .redesGrid .redesimg {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: redesimg;
+  }
+  .lista1 ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-size: 110%;
+    padding: 5%;
+  }
+  footer .footerGrids {
+        grid-template-areas: "izquierda" "derecha";
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  footer .izquierda {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: izquierda;
+  }
+  footer .derecha {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: derecha;
+  }
+  footer .derecha h3 {
+    font-size: 100%;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
