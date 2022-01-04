@@ -2,26 +2,25 @@
 footer{
     font-family:'Yeseva One', cursive ;
     background-color:$bc_lila; 
+    .footerGrids{
+        display: grid;
+        grid-template-areas:  
+        "izquierda derecha";
+        grid-template-columns: 1fr 1fr; 
+        font-family:'Yeseva One', cursive ;
+        background-color: $bc_lila ;
+        justify-items: center;
+        align-items: center;
+        padding: 4%;  
+    }
+    .izquierda{
+        grid-area: izquierda;
+        width: 50%;
+    
+    }
+    .derecha{
+        grid-area: derecha;
+        width: 50%;
+    } 
 }
-footer{
-    display: grid;
-    grid-template-areas:  
-    "izquierda derecha" ;
-    grid-template-columns: 1fr 1fr; 
-    font-family:'Yeseva One', cursive ;
-    background-color:#9FFFCB ;
-    justify-items: center;
-    align-items: center;
-    padding: 4%;   
 
-footer .izquierda{
-    grid-area: izquierda;
-    width: 50%;
-
-}
-
-footer .derecha{
-    grid-area: derecha;
-    width: 50%;
-}
-}
